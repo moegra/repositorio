@@ -1,0 +1,145 @@
+/*body*/
+img {
+  width: 500px;
+  height: 300px; }
+
+h2 {
+  color: rgba(21, 21, 202, 0.884); }
+
+h3 {
+  color: #0a0a0a; }
+
+body {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
+
+li {
+  color: #248f32; }
+
+a {
+  color: #248f32; }
+
+p {
+  color: #1e1ec5; }
+
+/*paginasAnexasFuente*/
+.fuente {
+  font-weight: bolder;
+  font-size: 24px;
+  color: #141452; }
+
+/*fondo*/
+.colorFondo {
+  background-color: #c3cfe0; }
+
+/*estiloLista*/
+.estiloLista {
+  list-style-type: square;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+/*cajas*/
+.box {
+  background-image: linear-gradient(to top, white, turquoise);
+  width: 1200px;
+  height: 175px;
+  font-size: 45px;
+  text-align: center;
+  margin: 25px;
+  padding: 25px;
+  border-bottom: #0a0a0a solid 8px;
+  border-right: #03223b solid 6px; }
+
+.boxTitulo {
+  background-image: linear-gradient(to left, white, turquoise);
+  border: #0a0a0a solid 8px;
+  width: 1200px;
+  height: 175px;
+  font-size: 45px;
+  text-align: center;
+  margin: 25px;
+  padding: 25px;
+  animation-name: miAnimacion;
+  animation-duration: 4s; }
+
+@keyframes miAnimacion {
+  0% {
+    background: #dedeeb; }
+  50% {
+    background: #2896b8; }
+  100% {
+    background: #90e69b; } }
+
+.boxTabla {
+  background-color: #020316;
+  width: 1200px;
+  height: 300px;
+  font-size: 45px;
+  text-align: center;
+  margin: 25px;
+  padding: 25px;
+  border: #ca0808 solid 8px; }
+
+.boxFieldset {
+  background-color: transparent;
+  width: 1200px;
+  height: 60px;
+  text-align: center;
+  border-bottom: #0a0a0a solid 4px;
+  border-right: #03223b solid 3px;
+  border-left: #03223b solid 3px; }
+
+.boxButton {
+  background-color: transparent;
+  width: 1230px;
+  height: 60px;
+  text-align: center;
+  border-bottom: #0a0a0a solid 4px;
+  border-right: #03223b solid 3px;
+  border-left: #03223b solid 3px; }
+
+.boxImagen {
+  background-image: linear-gradient(to left, white, turquoise);
+  width: 1200px;
+  height: 300px;
+  font-size: 45px;
+  text-align: center;
+  margin: 25px;
+  padding: 25px;
+  border: #0a0a0a solid 8px; }
+
+/*tituloflotante*/
+.divTitulo {
+  position: sticky;
+  top: 9px;
+  background-color: #88fc88;
+  width: 1200px;
+  height: 60px;
+  font-size: 14px;
+  text-align: center;
+  margin: 21px;
+  padding: 18px;
+  border: #0a0a0a solid 6px; }
+
+/*imagenes*/
+.imagenes {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.imagenes1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
+
+/*GRILLA*/
+.GRILLA {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  border: black solid;
+  text-align: center; }
+
+.GRILLA > * {
+  border: 1px solid black; }
