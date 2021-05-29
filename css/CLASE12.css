@@ -4,22 +4,31 @@ img {
   height: 300px; }
 
 h2 {
-  color: rgba(21, 21, 202, 0.884); }
+  color: black; }
 
 h3 {
   color: #0a0a0a; }
 
 body {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 li {
-  color: #248f32; }
+  color: #134b1a; }
 
 a {
-  color: #248f32; }
+  color: #124118; }
 
 p {
-  color: #1e1ec5; }
+  color: #1e1ec5;
+  width: 90vw; }
+
+.titulo-pas {
+  color: #141452;
+  font-size: 70px;
+  text-align: center; }
 
 /*paginasAnexasFuente*/
 .fuente {
@@ -38,10 +47,13 @@ p {
   flex-direction: row;
   justify-content: space-between; }
 
+.seccion-lista {
+  width: 90vw; }
+
 /*cajas*/
 .box {
   background-image: linear-gradient(to top, white, turquoise);
-  width: 1200px;
+  width: 90vw;
   height: 175px;
   font-size: 45px;
   text-align: center;
@@ -52,8 +64,9 @@ p {
 
 .boxTitulo {
   background-image: linear-gradient(to left, white, turquoise);
-  border: #0a0a0a solid 8px;
-  width: 1200px;
+  border-bottom: #0a0a0a solid 8px;
+  border-right: #03223b solid 6px;
+  width: 90vw;
   height: 175px;
   font-size: 45px;
   text-align: center;
@@ -72,7 +85,7 @@ p {
 
 .boxTabla {
   background-color: #020316;
-  width: 1200px;
+  width: 90vw;
   height: 300px;
   font-size: 45px;
   text-align: center;
@@ -82,7 +95,7 @@ p {
 
 .boxFieldset {
   background-color: transparent;
-  width: 1200px;
+  width: 90vw;
   height: 60px;
   text-align: center;
   border-bottom: #0a0a0a solid 4px;
@@ -91,7 +104,7 @@ p {
 
 .boxButton {
   background-color: transparent;
-  width: 1230px;
+  width: 90vw;
   height: 60px;
   text-align: center;
   border-bottom: #0a0a0a solid 4px;
@@ -100,20 +113,19 @@ p {
 
 .boxImagen {
   background-image: linear-gradient(to left, white, turquoise);
-  width: 1200px;
+  width: 90vw;
   height: 300px;
   font-size: 45px;
   text-align: center;
   margin: 25px;
   padding: 25px;
-  border: #0a0a0a solid 8px; }
+  border-bottom: #0a0a0a solid 8px;
+  border-right: #03223b solid 6px; }
 
 /*tituloflotante*/
 .divTitulo {
-  position: sticky;
-  top: 9px;
   background-color: #88fc88;
-  width: 1200px;
+  width: 90vw;
   height: 60px;
   font-size: 14px;
   text-align: center;
@@ -130,8 +142,18 @@ p {
 .imagenes1 {
   display: flex;
   flex-direction: row;
+  align-items: center; }
+  .imagenes1 img {
+    height: 20em;
+    width: 23em;
+    margin-right: 20px;
+    margin-top: 20px; }
+
+.seccion-imagenes {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: center; }
 
 /*GRILLA*/
 .GRILLA {
@@ -141,5 +163,18 @@ p {
   border: black solid;
   text-align: center; }
 
+.color-grilla {
+  color: darkslateblue; }
+
 .GRILLA > * {
   border: 1px solid black; }
+
+.separador {
+  width: 90vw;
+  border: solid 1px black; }
+
+.formatocolumna {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90vw; }

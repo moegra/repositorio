@@ -5,26 +5,32 @@ img {
     height: 300px;
 }
 h2 {
-    color: rgba(21, 21, 202, 0.884);
+    color: black;
 }
 h3 {
     color: rgb(10, 10, 10);
 }
 
 body {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex; flex-direction: column; align-items: center;  
 }
 
 li{
-    color: rgb(36, 143, 50);
+    color: rgb(19, 75, 26);
 }
 
 a{
-    color: rgb(36, 143, 50);
+    color: rgb(18, 65, 24);
 }
 
 p{
     color: rgb(30, 30, 197);
+    width: 90vw;
+}
+
+.titulo-pas{
+    color: rgb(20, 20, 82); font-size: 70px; text-align: center;
 }
 
 /*paginasAnexasFuente*/
@@ -47,12 +53,14 @@ p{
     flex-direction: row;
     justify-content: space-between;
 }
-
+.seccion-lista {
+    width: 90vw;
+}
 /*cajas*/
 
 .box{
     background-image: linear-gradient(to top, white, turquoise);
-    width: 1200px;
+    width: 90vw;
     height: 175px;
     font-size: 45px;
     text-align: center;
@@ -64,8 +72,9 @@ p{
 
 .boxTitulo{
     background-image: linear-gradient(to left, white, turquoise);
-    border:rgb(10, 10, 10) solid 8px;
-    width: 1200px;
+    border-bottom: rgb(10, 10, 10) solid 8px;
+    border-right: rgb(3, 34, 59) solid 6px;
+    width: 90vw;
     height: 175px;
     font-size: 45px;
     text-align: center;
@@ -83,7 +92,7 @@ p{
 
 .boxTabla{
     background-color: rgb(2, 3, 22);
-    width: 1200px;
+    width: 90vw;
     height: 300px;
     font-size: 45px;
     text-align: center;
@@ -94,7 +103,7 @@ p{
 
 .boxFieldset{
     background-color: transparent;
-    width: 1200px;
+    width: 90vw;
     height: 60px;
     text-align: center;
     border-bottom: rgb(10, 10, 10) solid 4px;
@@ -104,7 +113,7 @@ p{
 
 .boxButton{
     background-color: transparent;
-    width: 1230px;
+    width: 90vw;
     height: 60px;
     text-align: center;
     border-bottom: rgb(10, 10, 10) solid 4px;
@@ -114,22 +123,21 @@ p{
 
 .boxImagen{
     background-image: linear-gradient(to left, white, turquoise);
-    width: 1200px;
+    width: 90vw;
     height: 300px;
     font-size: 45px;
     text-align: center;
     margin: 25px;
     padding: 25px;
-    border:rgb(10, 10, 10) solid 8px;
+    border-bottom: rgb(10, 10, 10) solid 8px;
+    border-right: rgb(3, 34, 59) solid 6px;
 }
 
 /*tituloflotante*/
 
 .divTitulo{
-    position: sticky;
-    top: 9px;
     background-color: rgb(136, 252, 136);
-    width: 1200px;
+    width: 90vw;
     height: 60px;
     font-size: 14px;
     text-align: center;
@@ -150,7 +158,19 @@ p{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    img {
+        height: 20em;
+        width: 23em;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+}
+
+.seccion-imagenes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /*GRILLA*/
@@ -163,7 +183,22 @@ p{
     text-align: center;
 }
 
+.color-grilla{
+    color:darkslateblue;
+}
+
 .GRILLA > * {
     border: 1px solid black
 }
 
+.separador{
+    width: 90vw;
+    border: solid 1px black;
+}
+
+.formatocolumna{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90vw;
+}
